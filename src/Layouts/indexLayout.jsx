@@ -11,7 +11,7 @@ const indexLayout = () => {
         <Header />
       </div>
 
-      <div className='h-full w-full bg-red-300'>
+      <div>
         <Outlet />
       </div>
       
