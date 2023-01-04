@@ -3,12 +3,13 @@ import { FaAngleRight } from "react-icons/fa";
 import { EnvelopeIcon } from "@heroicons/react/20/solid";
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
+
+import { Navigation, Pagination } from "swiper";
 import {
   Bars3Icon,
   ChatBubbleBottomCenterTextIcon,
@@ -224,43 +225,51 @@ const Hero = () => {
         {/* More main page content here... */}
       </div>
 
-      {/* <div className="flex justify-center items-center ">
+      {/* <div>
         <Swiper
-          cssMode={true}
+          slidesPerView={3}
+          spaceBetween={30}
+          slidesPerGroup={3}
+          loop={true}
+          loopFillGroupWithBlank={true}
+          pagination={{
+            clickable: true,
+          }}
           navigation={true}
-          pagination={true}
-          mousewheel={true}
-          keyboard={true}
-          modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+          modules={[Pagination, Navigation]}
           className="mySwiper"
         >
-          <div>
-            <SwiperSlide><div className="">Slide 1</div></SwiperSlide>
-            <SwiperSlide>Slide 2</SwiperSlide>
-            <SwiperSlide>Slide 3</SwiperSlide>
-            <SwiperSlide>Slide 4</SwiperSlide>
-            <SwiperSlide>Slide 5</SwiperSlide>
-            <SwiperSlide>Slide 6</SwiperSlide>
-            <SwiperSlide>Slide 7</SwiperSlide>
-            <SwiperSlide>Slide 8</SwiperSlide>
-            <SwiperSlide>Slide 9</SwiperSlide>
-          </div>
-
+          <SwiperSlide>Slide 1</SwiperSlide>
+          <SwiperSlide>Slide 2</SwiperSlide>
+          <SwiperSlide>Slide 3</SwiperSlide>
+          <SwiperSlide>Slide 4</SwiperSlide>
+          <SwiperSlide>Slide 5</SwiperSlide>
+          <SwiperSlide>Slide 6</SwiperSlide>
+          <SwiperSlide>Slide 7</SwiperSlide>
+          <SwiperSlide>Slide 8</SwiperSlide>
+          <SwiperSlide>Slide 9</SwiperSlide>
         </Swiper>
-      </div> */}
 
-      <Swiper
-        spaceBetween={50}
-        slidesPerView={3}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
-      >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        ...
-      </Swiper>
+      </div> */}
+      <div className="grid grid-cols-2 w-full h-2/4 bg-red-300">
+        <div>
+          <img src="https://www.rolls-royce.com/~/media/Images/R/Rolls-Royce/About/nz-signpost.jpg?h=404&iar=0&w=685" alt="productos" />
+          <h2>
+            Leading the Transition to Net Zero
+          </h2>
+          <h3>
+            Our low carbon approach
+          </h3>
+          <p>
+            we are committed to the decarbonisation of our core markets and will continue to invest that can accelerate this transition, whilist minimising the impacts of our business operations 
+          </p>
+        </div>
+        <div>
+          <h1>Segunda columna</h1>
+        </div>
+      </div>
+
+
     </>
   );
 };

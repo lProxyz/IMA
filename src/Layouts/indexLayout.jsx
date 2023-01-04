@@ -14,7 +14,7 @@ const indexLayout = () => {
       <div>
         <Outlet />
       </div>
-      
+
       <div>
         <Footer />
       </div>
