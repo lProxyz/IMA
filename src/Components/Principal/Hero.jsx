@@ -92,28 +92,6 @@ const Hero = () => {
         <div className="w-full grid grid-cols-4 gap-x-4 ml-2 mb-20">
           <a className="bg-white border" href="#">
             <img
-              src="https://www.rolls-royce.com/~/media/Images/R/Rolls-Royce/Stories/2022/rr-ultrafan-content-image.jpg?h=300&iar=0&w=480"
-              alt=""
-            />
-            <p className="text-[#10069F] text-2xl text-center mb-2 border-b">
-              Rolls-Royce UltraFan technology demonstrater build...
-            </p>
-            <div className="grid grid-cols-2 ml-5">
-              <div>
-                <p className="uppercase text-[#FA4692] font-bold text-[12px] py-3">
-                  press releases
-                </p>
-              </div>
-              <div>
-                <p className="uppercase text-[#CECED1] font-bold text-[12px] py-3">
-                  19 December 2022
-                </p>
-              </div>
-            </div>
-          </a>
-
-          <a className="bg-white border" href="#">
-            <img
               src="https://www.rolls-royce.com/~/media/Images/R/Rolls-Royce/Stories/2022/rr-gulfstream-content-image.jpg?h=300&iar=0&w=480"
               alt=""
             />
@@ -181,18 +159,21 @@ const Hero = () => {
 
         {/* More main page content here... */}
       </div>
-{/* //! implementacion del componente del carrusel   */}
-      <div className="w-full mb-20 bg-blue-300">
+      {/* //! implementacion del componente del carrusel   */}
+      
+      <div className="ml-2 bg-blue-300 ">
         <Carrusel />
       </div>
 
-      <div className="grid grid-cols-2 w-full h-2/4 bg-red-300">
+      <div className="grid grid-cols-2 w-full h-2/4 bg-red-300 gap-x-6 pl-8 py-5">
         <div>
           <img
             src="https://www.rolls-royce.com/~/media/Images/R/Rolls-Royce/About/nz-signpost.jpg?h=404&iar=0&w=685"
             alt="productos"
           />
-          <h2>Leading the Transition to Net Zero</h2>
+          <h2 className="text-4xl text-center ">
+            Leading the Transition to Net Zero
+          </h2>
           <h3>Our low carbon approach</h3>
           <p>
             we are committed to the decarbonisation of our core markets and will
@@ -200,8 +181,21 @@ const Hero = () => {
             minimising the impacts of our business operations
           </p>
         </div>
-        <div>
-          <h1>Segunda columna</h1>
+        <div className="pr-7">
+          <img
+            className="w-[685px] h-[404px]"
+            src="https://www.rolls-royce.com/~/media/Images/R/Rolls-Royce/content-images/country-site/large-signposts/rr-ar21-hero-banner.jpg?h=404&iar=0&w=685"
+            alt="productos"
+          />
+          <div className="pt-7 pl-5 text-start">
+            <h2 className="text-3xl text-[#10069F]">
+              Annual Report 2021
+            </h2>
+            <h3 className="text-[24px]">Generating positive momentum</h3>
+            <p>
+              we improved our financial performance, delivered our near-tenm commitments, won new business opportunities and took important strategic steps forward during the year. While challenges remain, we can look with increasing confidence to the future and the significant commercial opportunity presented by the transition to net zero.
+            </p>
+          </div>
         </div>
       </div>
     </>

@@ -38,10 +38,10 @@ const noticia = [
 const Carrusel = (props) => {
   return (
     <>
-      <div className="w-full h-64">
+      <div className="w-full h-[303px]">
         <Swiper
           slidesPerView={4}
-          spaceBetween={30}
+          spaceBetween={15}
           slidesPerGroup={4}
           loop={true}
           loopFillGroupWithBlank={true}
@@ -50,30 +50,99 @@ const Carrusel = (props) => {
           }}
           navigation={true}
           modules={[Pagination, Navigation]}
-          className="mySwiper"
+          className="p"
         >
-          <SwiperSlide>
-            <div>
-              <div>
-                  {noticia.map((person) => (
-                    <li key={person.name}>
-                        <div>
-                            <img 
-                            className="bg-white"
-                            src={person.image} alt="cualquier texto" />
-                        </div>
-                    </li>
-                  ))}
-
-                <img src={noticia.image} />
-                <h1>{noticia.name}</h1>
-                <p>{noticia.category}</p>
-              </div>
+          <SwiperSlide
+            style={{ alignItems: "start"}}
+          >
+            <div className="border-2 border-gray-500 bg-white hover:bg-[#006DFF] hover:text-white text-[#10069F]">
+              <a className="bg-white" href="#">
+                <div className="h-[60px]">
+                  <img
+                    className="object-top"
+                    src="https://www.rolls-royce.com/~/media/Images/R/Rolls-Royce/Stories/2022/rr-ultrafan-content-image.jpg?h=300&iar=0&w=480"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <p className="ml-10 mr-32  text-[24px] text-start border-b mt-3 border-gray-300 tracking-wide ">
+                    Rolls-Royce UltraFan technology demonstrator build...
+                  </p>
+                </div>
+                <div className="grid grid-cols-2 ml-5">
+                  <div className="flex">
+                    <p className="uppercase text-[#FA4692] font-bold text-[12px] py-3">
+                      press releases
+                    </p>
+                  </div>
+                  <div>
+                    <p className="uppercase text-[#CECED1] font-bold text-[12px] py-3">
+                      19 December 2022
+                    </p>
+                  </div>
+                </div>
+              </a>
             </div>
           </SwiperSlide>
 
-          <SwiperSlide>Slide 2</SwiperSlide>
-          <SwiperSlide>Slide 3</SwiperSlide>
+          <SwiperSlide>
+            <div>
+              <a className="bg-white" href="#">
+                <div className="h-20 ">
+                  <img
+                    className="object-top"
+                    src="https://www.rolls-royce.com/~/media/Images/R/Rolls-Royce/Stories/2022/rr-gulfstream-content-image.jpg?h=300&iar=0&w=480"
+                    alt=""
+                  />
+                </div>
+
+                <p className="text-[#10069F] text-[22px] text-center mb-2 border-b border-gray-300">
+                  Rolls-Royce UltraFan technology demonstrater build...
+                </p>
+                <div className="grid grid-cols-2 ml-5">
+                  <div>
+                    <p className="uppercase text-[#FA4692] font-bold text-[12px] py-3">
+                      press releases
+                    </p>
+                  </div>
+                  <div>
+                    <p className="uppercase text-[#CECED1] font-bold text-[12px] py-3">
+                      19 December 2022
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="pl-2">
+              <a className="bg-white" href="#">
+                <div className="h-20 ">
+                  <img
+                    className=""
+                    src="https://www.rolls-royce.com/~/media/Images/R/Rolls-Royce/Stories/2022/rr-ultrafan-content-image.jpg?h=300&iar=0&w=480"
+                    alt=""
+                  />
+                </div>
+
+                <p className="text-[#10069F] text-[22px] text-center mb-2 border-b border-gray-300">
+                  Rolls-Royce UltraFan technology demonstrater build...
+                </p>
+                <div className="grid grid-cols-2 ml-5">
+                  <div>
+                    <p className="uppercase text-[#FA4692] font-bold text-[12px] py-3">
+                      press releases
+                    </p>
+                  </div>
+                  <div>
+                    <p className="uppercase text-[#CECED1] font-bold text-[12px] py-3">
+                      19 December 2022
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </SwiperSlide>
           <SwiperSlide>Slide 4</SwiperSlide>
           <SwiperSlide>Slide 5</SwiperSlide>
           <SwiperSlide>Slide 6</SwiperSlide>
