@@ -51,7 +51,7 @@ const Carrusel = (props) => {
           navigation={true}
           modules={[Pagination, Navigation]}
         >
-          <SwiperSlide style={{ alignItems: "start" }}>
+          <SwiperSlide style={{ alignItems: "start", border: "5px" }}>
             <div className="link">
               <a className="z-10 " href="#">
                 <div className="h-32 ">
@@ -67,7 +67,7 @@ const Carrusel = (props) => {
                 <div>
                   <div>
                     <p className=" text-start p-3 border-b border-gray-300">
-                      Rolls-Royce and Gulfstream give wings to...
+                      Rolls-Royce Ultrafan technology demonstrator build...
                     </p>
                     <div className="grid grid-cols-2 ml-2 justify-between">
                       <div>
@@ -196,6 +196,7 @@ const Carrusel = (props) => {
             </div>
 
           </SwiperSlide>
+          <SwiperSlide>Slide 6</SwiperSlide>
           <SwiperSlide>Slide 7</SwiperSlide>
           <SwiperSlide>Slide 8</SwiperSlide>
           <SwiperSlide>Slide 9</SwiperSlide>
