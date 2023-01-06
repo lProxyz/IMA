@@ -99,23 +99,27 @@ const Hero = () => {
           <Carrusel />
         </div>
 
+
         <div className="grid grid-cols-2 w-full gap-x-6 pl-[39px]  py-5 ">
-          <div className="hover:text-white hover:bg-[#006DFF]">
-            <a href="#" className="z-10">
-              <div className="border border-gray-200 h-[750px]">
+
+          {/* //! primera columna   */}
+          <div className="">
+            <a href="#"
+            >
+              <div className=" hover:bg-[#006DFF] border border-gray-200 h-[750px]">
                 <img
                   className="h-[404px] w-[685px]"
                   src="https://www.rolls-royce.com/~/media/Images/R/Rolls-Royce/About/nz-signpost.jpg?h=404&iar=0&w=685"
                   alt="productos"
                 />
-                <div className="pt-10 pl-[42px] pr-12 text-start">
-                  <h2 className="pb-[12px] text-[#10069F]">
+                <div className="card pt-10 pl-[42px] pr-12 text-start">
+                  <h2 className="titulo pb-[12px]">
                     Leading the Transition to Net Zero
                   </h2>
-                  <h3 className="text-[1.429em] leading-[1.5em] mb-[12px]  tracking-wider">
+                  <h3 className="subtitulo mb-[12px]">
                     Our low carbon approach
                   </h3>
-                  <p className="pb-[23px] text-[18px] text-[#4E5D65] ">
+                  <p className="parrafo pb-[23px] ">
                     we are committed to the decarbonisation of our core markets
                     and will continue to invest that can accelerate this
                     transition, whilist minimising the impacts of our business
@@ -125,6 +129,7 @@ const Hero = () => {
               </div>
             </a>
           </div>
+
           <div className="texto">
             <a href="#" className="z-10">
               <div className="pr-7 border border-gray-200 h-[750px]">
