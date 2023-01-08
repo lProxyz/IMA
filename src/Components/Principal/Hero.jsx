@@ -2,6 +2,7 @@ import React from "react";
 import { FaAngleRight } from "react-icons/fa";
 import { InboxIcon } from "@heroicons/react/24/outline";
 import Carrusel from "./Carrusel";
+import Team from "../Team";
 
 const solutions = [
   {
@@ -100,67 +101,63 @@ const Hero = () => {
         </div>
 
 
-        <div className="grid grid-cols-2 w-full gap-x-6 pl-[39px]  py-5 ">
-
+        <div className="grid grid-cols-2 w-full gap-x-6 pl-[39px] py-5 mb-4">
           {/* //! primera columna   */}
-          <div className="">
-            <a href="#"
-            >
-              <div className=" hover:bg-[#006DFF] border border-gray-200 h-[750px]">
+          <div>
+            <a href="#">
+              <div className="card hover:shadow-2xl hover:bg-[#006DFF] border border-gray-200 h-[750px]">
                 <img
                   className="h-[404px] w-[685px]"
                   src="https://www.rolls-royce.com/~/media/Images/R/Rolls-Royce/About/nz-signpost.jpg?h=404&iar=0&w=685"
                   alt="productos"
                 />
-                <div className="card pt-10 pl-[42px] pr-12 text-start">
-                  <h2 className="titulo pb-[12px]">
-                    Leading the Transition to Net Zero
-                  </h2>
-                  <h3 className="subtitulo mb-[12px]">
-                    Our low carbon approach
-                  </h3>
-                  <p className="parrafo pb-[23px] ">
-                    we are committed to the decarbonisation of our core markets
-                    and will continue to invest that can accelerate this
-                    transition, whilist minimising the impacts of our business
-                    operations
-                  </p>
-                </div>
+                <h2 className="pt-10 pl-[42px] pr-12 titulo pb-[12px]">
+                  Leading the Transition to Net Zero
+                </h2>
+                <h3 className="pl-[42px] pr-12 subtitulo mb-[12px]">
+                  Our low carbon approach
+                </h3>
+                <p className="pl-[42px] pr-12 parrafo pb-[23px] ">
+                  we are committed to the decarbonisation of our core markets
+                  and will continue to invest that can accelerate this
+                  transition, whilist minimising the impacts of our business
+                  operations
+                </p>
               </div>
             </a>
           </div>
 
-          <div className="texto">
-            <a href="#" className="z-10">
-              <div className="pr-7 border border-gray-200 h-[750px]">
+          <div>
+            <a href="#">
+              <div className="card hover:shadow-2xl hover:bg-[#006DFF] mr-7 border border-gray-200 h-[750px]">
                 <img
                   className="w-[685px] h-[404px]"
                   src="https://www.rolls-royce.com/~/media/Images/R/Rolls-Royce/content-images/country-site/large-signposts/rr-ar21-hero-banner.jpg?h=404&iar=0&w=685"
                   alt="productos"
                 />
-                <div>
-                  <div className="pt-10 pl-[42px] pr-12 text-start">
-                    <h2 className="pb-[12px]">Annual Report 2021</h2>
-                    <p className="leading-[1.5em] tracking-wider text-[#4E5D65] mb-[12px]">
-                      Generating positive momentum
-                    </p>
-                    <p className="pb-[23px] text-[18px] text-[#4E5D65]">
-                      We improved our financial performance, delivered our
-                      near-term commitments, won new business opportunities and
-                      took important strategic steps forward during the year.
-                      While challenges remain, we can look with increasing
-                      confidence to the future and the significant commercial
-                      opportunity presented by the transition to net zero.
-                    </p>
-                  </div>
-                </div>
+
+                <h2 className="titulo pt-10 pl-[42px] pr-12 pb-[12px]">Annual Report 2021</h2>
+                <p className="subtitulo pl-[42px] pr-12 leading-[1.5em] tracking-wider text-[#4E5D65] mb-[12px]">
+                  Generating positive momentum
+                </p>
+                <p className="parrafo pl-[42px] pr-12 pb-[23px]">
+                  We improved our financial performance, delivered our
+                  near-term commitments, won new business opportunities and
+                  took important strategic steps forward during the year.
+                  While challenges remain, we can look with increasing
+                  confidence to the future and the significant commercial
+                  opportunity presented by the transition to net zero.
+                </p>
+
+
               </div>
             </a>
           </div>
+
         </div>
 
         {/* //!Como si fuera el body */}
-        <div>
+        {/* <div>
           <section class="text-gray-600 body-font relative">
             <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
               <div class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
@@ -248,8 +245,63 @@ const Hero = () => {
               </div>
             </div>
           </section>
-        </div>
+        </div> */}
       </div>
+
+      <div className="bg-gray-100 w-full">
+        <a href="#" className="hover:text-[#006DFF] flex  items-center justify-center text-center text-[45px] text-[#1E3643]">
+          Meet our experts <FaAngleRight className="mt-4" />
+        </a>
+        <div className="mt-10 mb-12">
+          <Team />
+        </div>
+
+        {/* <section class="bg-[#FA4692]">
+          <div class="container mx-auto flex px-5 py-12 md:flex-row flex-col items-center">
+            <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+              <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Before they sold out
+                <br class="hidden lg:inline-block" />readymade gluten
+              </h1>
+              <p class="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
+              <div class="flex justify-center">
+                <button class="inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">Button</button>
+                <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Button</button>
+              </div>
+            </div>
+            <div class="ml-24 w-full">
+              <img class="object-cover object-center rounded" alt="hero" src="https://careers.rolls-royce.com/~/media/Images/R/Rolls-Royce-Careers-V2/content-images/2-2-half-width/beyond-tomorrow.jpg?h=509&iar=0&w=702" />
+            </div>
+          </div>
+        </section> */}
+        <main className="lg:relative">
+          <div className="mx-auto w-full max-w-7xl pt-16 pb-20 text-center lg:py-48 lg:text-left">
+            <div className="px-6 sm:px-8 lg:w-1/2 xl:pr-16">
+              <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
+                <span className="block xl:inline">Join our journey </span>
+              </h1>
+              <p className="mx-auto mt-3 max-w-md text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
+                Whether you´re starting your career, or an experienced professional looking to make a difference, we offter a world of possibilities to choose from
+              </p>
+              <div className="mt-3  w-1/2">
+                <a
+                  href="#"
+                  className="flex w-full items-center justify-center border border-transparent bg-white px-8 py-3 text-base font-medium text-indigo-600 hover:bg-gray-50 md:py-4 md:px-10 md:text-lg uppercase rounded-full">
+                  Find out more <FaAngleRight />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="relative h-64 w-full sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0  lg:w-1/2">
+            <img
+              className="absolute inset-0 h-full w-full object-cover"
+              src="https://careers.rolls-royce.com/~/media/Images/R/Rolls-Royce-Careers-V2/content-images/2-2-half-width/beyond-tomorrow.jpg?h=509&iar=0&w=702"
+              alt=""
+            />
+          </div>
+        </main>
+      </div>
+
+
     </>
   );
 };

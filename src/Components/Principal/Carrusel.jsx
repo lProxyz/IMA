@@ -90,7 +90,7 @@ const Carrusel = (props) => {
           <SwiperSlide style={{ alignItems: "start" }}>
             <div className="link">
               <a className="z-10 " href="#">
-                <div className="h-32 ">
+                <div className="h-32 w-full">
                   <img
                     className="object-center"
                     src="https://www.rolls-royce.com/~/media/Images/R/Rolls-Royce/Stories/2022/rr-gulfstream-content-image.jpg?h=300&iar=0&w=480"
