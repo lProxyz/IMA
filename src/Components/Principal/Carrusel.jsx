@@ -24,7 +24,7 @@ const noticia = [
     name: "A 5-minute chat with Marcin Dutka",
     image:
       "https://www.rolls-royce.com/~/media/Images/R/Rolls-Royce/Stories/2022/story-a-5-minute-chat-with-marcin-dutka-01.jpg?h=200&iar=0&w=200",
-    category: "Press Releases",
+    category: "News & Insights",
     fecha: "13-12-2022",
   },
   {
@@ -38,7 +38,59 @@ const noticia = [
 const Carrusel = (props) => {
   return (
     <>
-      <div className="w-full h-[303px]">
+      <div className="w-full mx-auto block sm:hidden">
+        <Swiper
+          slidesPerView={1}
+          spaceBetween={15}
+          slidesPerGroup={1}
+          loop={true}
+          loopFillGroupWithBlank={true}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[Pagination, Navigation]}
+        >
+          {noticia.map((noti) => (
+            <SwiperSlide
+              style={{ alignItems: "start", border: "5px" }}
+              className="w-full h-[26rem]"
+              key={noti.name}
+            >
+              <div className="link basis-1/4">
+                <a className="z-10">
+                  {/* //! Intentando colocar el estilo del boton */}
+                  <div className="hover:shadow-md duration-500 hover:shadow-black/40">
+                    <div className="h-[25rem] border border-gray-400/30">
+                      <img
+                        className=" flex h-48 object-cover w-full duration-500 hover:scale-105"
+                        src={noti.image}
+                      />
+                      <p className=" text-start p-3">{noti.name}</p>
+                      <div className="divide-y-4 divide-slate-900 w-full"></div>
+                      <div className="flex basis-1/2 justify-between mx-5 items-end">
+                        <div className="flex content-end">
+                          <p className="uppercase text-[#FA4692] font-bold text-[12px] py-3">
+                            {noti.category}
+                          </p>
+                        </div>
+
+                        <div>
+                          <p className="uppercase text-[#CECED1] font-bold text-[12px] py-3">
+                            {noti.fecha}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+      
+      <div className="w-full hidden md:block">
         <Swiper
           slidesPerView={4}
           spaceBetween={15}
@@ -51,155 +103,94 @@ const Carrusel = (props) => {
           navigation={true}
           modules={[Pagination, Navigation]}
         >
-          <SwiperSlide style={{ alignItems: "start", border: "5px" }}>
-            <div className="link">
-              <a className="z-10 " href="#">
-                <div className="h-32 ">
-                  <img
-                    className="object-center"
-                    src="https://www.rolls-royce.com/~/media/Images/R/Rolls-Royce/Stories/2022/rr-ultrafan-content-image.jpg?h=300&iar=0&w=480"
-                    alt=""
-                  />
-                </div>
+          {noticia.map((noti) => (
+            <SwiperSlide
+              style={{ alignItems: "start", border: "5px" }}
+              className="w-full h-[26rem]"
+              key={noti.name}
+            >
+              <div className="link basis-1/4">
+                <a className="z-10">
+                  {/* //! Intentando colocar el estilo del boton */}
+                  <div className="hover:shadow-md duration-500 hover:shadow-black/40">
+                    <div className="h-[25rem] border border-gray-400/30">
+                      <img
+                        className=" flex h-48 object-cover w-full duration-500 hover:scale-105"
+                        src={noti.image}
+                      />
+                      <p className=" text-start p-3">{noti.name}</p>
+                      <div className="divide-y-4 divide-slate-900 w-full"></div>
+                      <div className="flex basis-1/2 justify-between mx-5 items-end">
+                        <div className="flex content-end">
+                          <p className="uppercase text-[#FA4692] font-bold text-[12px] py-3">
+                            {noti.category}
+                          </p>
+                        </div>
 
-                {/* //! Intentando coloar el estilo del boton */}
-
-                <div>
-                  <div>
-                    <p className=" text-start p-3 border-b border-gray-300">
-                      Rolls-Royce Ultrafan technology demonstrator build...
-                    </p>
-                    <div className="grid grid-cols-2 ml-2 justify-between">
-                      <div>
-                        <p className="uppercase text-[#FA4692] font-bold text-[12px] py-3">
-                          press releases
-                        </p>
-                      </div>
-                      <div>
-                        <p className="uppercase text-[#CECED1] font-bold text-[12px] py-3">
-                          16 December 2022
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-          </SwiperSlide>
-          <SwiperSlide style={{ alignItems: "start" }}>
-            <div className="link">
-              <a className="z-10 " href="#">
-                <div className="h-32 w-full">
-                  <img
-                    className="object-center"
-                    src="https://www.rolls-royce.com/~/media/Images/R/Rolls-Royce/Stories/2022/rr-gulfstream-content-image.jpg?h=300&iar=0&w=480"
-                    alt=""
-                  />
-                </div>
-
-                {/* //! Intentando coloar el estilo del boton */}
-
-                <div>
-                  <div>
-                    <p className=" text-start p-3 border-b border-gray-300">
-                      Rolls-Royce UltraFan technology demonstrater build...
-                    </p>
-                    <div className="grid grid-cols-2 ml-2 justify-between">
-                      <div>
-                        <p className="uppercase text-[#FA4692] font-bold text-[12px] py-3">
-                          press releases
-                        </p>
-                      </div>
-                      <div>
-                        <p className="uppercase text-[#CECED1] font-bold text-[12px] py-3">
-                          19 December 2022
-                        </p>
+                        <div>
+                          <p className="uppercase text-[#CECED1] font-bold text-[12px] py-3">
+                            {noti.fecha}
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </a>
-            </div>
+                </a>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
 
-          </SwiperSlide>
+      <div className="w-full hidden sm:block md:hidden">
+        <Swiper
+          slidesPerView={2}
+          spaceBetween={15}
+          slidesPerGroup={2}
+          loop={true}
+          loopFillGroupWithBlank={true}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[Pagination, Navigation]}
+        >
+          {noticia.map((noti) => (
+            <SwiperSlide
+              style={{ alignItems: "start", border: "5px" }}
+              className="w-full h-[26rem]"
+              key={noti.name}
+            >
+              <div className="link basis-1/4">
+                <a className="z-10">
+                  {/* //! Intentando colocar el estilo del boton */}
+                  <div className="hover:shadow-md duration-500 hover:shadow-black/40">
+                    <div className="h-[25rem] border border-gray-400/30">
+                      <img
+                        className=" flex h-48 object-cover w-full duration-500 hover:scale-105"
+                        src={noti.image}
+                      />
+                      <p className=" text-start p-3">{noti.name}</p>
+                      <div className="divide-y-4 divide-slate-900 w-full"></div>
+                      <div className="flex basis-1/2 justify-between mx-5 items-end">
+                        <div className="flex content-end">
+                          <p className="uppercase text-[#FA4692] font-bold text-[12px] py-3">
+                            {noti.category}
+                          </p>
+                        </div>
 
-          <SwiperSlide style={{ alignItems: "start" }}>
-            <div className="link">
-              <a className="z-10 " href="#">
-                <div className="h-32 ">
-                  <img
-                    className="object-center"
-                    src="https://www.rolls-royce.com/~/media/Images/R/Rolls-Royce/Stories/2022/story-a-5-minute-chat-with-marcin-dutka-01.jpg?h=200&iar=0&w=200"
-                    alt=""
-                  />
-                </div>
-
-                {/* //! Intentando coloar el estilo del boton */}
-
-                <div>
-                  <div>
-                    <p className=" text-start p-3 pb-12 border-b border-gray-300">
-                      A 5-minute chat with Marcin Dutka
-                    </p>
-                    <div className="grid grid-cols-2 ml-2 justify-between">
-                      <div>
-                        <p className="uppercase text-[#FA4692] font-bold text-[12px] py-3">
-                          our stories
-                        </p>
-                      </div>
-                      <div>
-                        <p className="uppercase text-[#CECED1] font-bold text-[12px] py-3">
-                          13 December 2022
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-          </SwiperSlide>
-          <SwiperSlide style={{ alignItems: "start" }}>
-            <div className="link">
-              <a className="z-10 " href="#">
-                <div className="h-32 ">
-                  <img
-                    className="object-top transform hover:scale-100"
-                    src="https://www.rolls-royce.com/~/media/Images/R/Rolls-Royce/content-images/marine/discover/landing-images/pr-default-landing-image-v3.jpg?h=470&iar=0&w=500"
-                    alt=""
-                  />
-                </div>
-
-                {/* //! Intentando colocar el estilo del boton */}
-
-                <div>
-                  <div>
-                    <p className=" text-start p-3 pb-12 border-b border-gray-300">
-                      Rools-Royce, Pratt & Whitney, Virginia Tech...
-                    </p>
-                    <div className="grid grid-cols-2 ml-2 justify-between">
-                      <div>
-                        <p className="uppercase text-[#FA4692] font-bold text-[12px] py-3">
-                          press releases
-                        </p>
-                      </div>
-                      <div>
-                        <p className="uppercase text-[#CECED1] font-bold text-[12px] py-3">
-                          09 December 2022
-                        </p>
+                        <div>
+                          <p className="uppercase text-[#CECED1] font-bold text-[12px] py-3">
+                            {noti.fecha}
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </a>
-            </div>
-
-          </SwiperSlide>
-          <SwiperSlide>Slide 6</SwiperSlide>
-          <SwiperSlide>Slide 7</SwiperSlide>
-          <SwiperSlide>Slide 8</SwiperSlide>
-          <SwiperSlide>Slide 9</SwiperSlide>
+                </a>
+              </div>
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </>

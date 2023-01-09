@@ -3,6 +3,7 @@ import { FaAngleRight } from "react-icons/fa";
 import Carrusel from "./Carrusel";
 import Team from "../Team";
 import { IoAirplaneOutline } from "react-icons/io5";
+import Ejemplo from "./ejemplo";
 
 const Hero = () => {
   return (
@@ -79,17 +80,16 @@ const Hero = () => {
         </div>
 
         {/* //! Seccion de noticias (carrusel) */}
-        <h1 className="text-center text-[50px] text-[#1E3643] mb-12">
+        <h1 className="text-center text-[50px] text-[#1E3643]">
           Latest Updates
         </h1>
         {/* More main page content here... */}
 
         {/* //! implementacion del componente del carrusel   */}
 
-        <div className="ml-2 mb-20 ">
+        <div className="mx-auto my-36 ">
           <Carrusel />
         </div>
-
 
         <div className="grid grid-cols-2 w-full gap-x-6 pl-[39px] py-5 mb-4">
           {/* //! primera columna   */}
@@ -126,24 +126,23 @@ const Hero = () => {
                   alt="productos"
                 />
 
-                <h2 className="titulo pt-10 pl-[42px] pr-12 pb-[12px]">Annual Report 2021</h2>
+                <h2 className="titulo pt-10 pl-[42px] pr-12 pb-[12px]">
+                  Annual Report 2021
+                </h2>
                 <p className="subtitulo pl-[42px] pr-12 leading-[1.5em] tracking-wider text-[#4E5D65] mb-[12px]">
                   Generating positive momentum
                 </p>
                 <p className="parrafo pl-[42px] pr-12 pb-[23px]">
-                  We improved our financial performance, delivered our
-                  near-term commitments, won new business opportunities and
-                  took important strategic steps forward during the year.
-                  While challenges remain, we can look with increasing
-                  confidence to the future and the significant commercial
-                  opportunity presented by the transition to net zero.
+                  We improved our financial performance, delivered our near-term
+                  commitments, won new business opportunities and took important
+                  strategic steps forward during the year. While challenges
+                  remain, we can look with increasing confidence to the future
+                  and the significant commercial opportunity presented by the
+                  transition to net zero.
                 </p>
-
-
               </div>
             </a>
           </div>
-
         </div>
 
         {/* //!Como si fuera el body */}
@@ -238,7 +237,10 @@ const Hero = () => {
         </div> */}
       </div>
       <div className="bg-gray-100 w-full pb-20">
-        <a href="#" className="hover:text-[#006DFF] flex  items-center justify-center text-center text-[45px] text-[#1E3643]">
+        <a
+          href="#"
+          className="hover:text-[#006DFF] flex  items-center justify-center text-center text-[45px] text-[#1E3643]"
+        >
           Meet our experts <FaAngleRight className="mt-4" />
         </a>
         <div className="mt-10 mb-12">
@@ -263,19 +265,22 @@ const Hero = () => {
           </div>
         </section> */}
 
-        <main className="lg:relative bg-[#FA4692] w-[1240px] h-[529px]">
+        <main className="lg:relative bg-[#FA4692] w-[full] h-[529px]">
           <div className="w-full max-w-7xl pt-[110px] pb-20 text-center lg:text-left">
             <div className="pl-20 lg:w-1/2">
-              <h1 className="text-[40px]  text-white ">
+              <h1 className="text-[40px] text-white ">
                 <span className="xl:inline">Join our journey </span>
               </h1>
               <p className="mx-auto mt-3 max-w-md text-lg text-white sm:text-xl md:mt-5 md:max-w-3xl pr-[190px] ">
-                Whether you´re starting your career, or an experienced professional looking to make a difference, we offter a world of possibilities to choose from
+                Whether you´re starting your career, or an experienced
+                professional looking to make a difference, we offter a world of
+                possibilities to choose from
               </p>
-              <div className="mt-5 w-1/2">
+              <div className="boton mt-5">
                 <a
                   href="#"
-                  className="flex w-[180px] items-center justify-center border-2 py-3 md:py-4 uppercase rounded-full text-white font-bold">
+                  className="z-10 flex w-[180px] items-center justify-center border-2 py-3 md:py-4 uppercase rounded-full text-white hover:text-[#006DFF] font-bold"
+                >
                   Find out more <FaAngleRight className="w-5 h-5" />
                 </a>
               </div>
@@ -293,7 +298,10 @@ const Hero = () => {
 
       <div className="bg-white mb-20">
         <h1 className="text-[45px] text-center my-11">Products & Services</h1>
-        <p className="text-center px-[270px] pb-10 text-xl leading-[1.5em]">We pionner cutting-edge technologies that deliver the cleanest, safest and most competitive solutions to our planet´s vital power needs</p>
+        <p className="text-center px-[270px] pb-10 text-xl leading-[1.5em]">
+          We pionner cutting-edge technologies that deliver the cleanest, safest
+          and most competitive solutions to our planet´s vital power needs
+        </p>
 
         <div className="mx-6 grid grid-cols-3 gap-x-6 gap-y-8">
           <div className="relative w-full h-64 bg-black">
@@ -306,11 +314,14 @@ const Hero = () => {
             </div>
             <div className="flex my-5 ml-5">
               <IoAirplaneOutline className="relative text-gray-400 h-12 w-12 mr-3" />
-              <h1 className="relative text-[#5b5b5b] text-[1.857em]"> Civil Aerospace</h1>
+              <h1 className="relative text-[#5b5b5b] text-[1.857em]">
+                {" "}
+                Civil Aerospace
+              </h1>
             </div>
           </div>
 
-          <div className="relative w-full h-64 bg-black">
+          <div className="relative w-full h-64">
             <div className="absolute">
               <img
                 className="h-[259px] w-full object-cover object-right"
@@ -319,8 +330,14 @@ const Hero = () => {
               />
             </div>
             <div className="flex my-5 ml-5">
-              <img src="https://www.rolls-royce.com/~/media/Images/R/Rolls-Royce/content-images/flexible-signposts/icons/combined-shape-new.png?h=43&iar=0&w=40" className="relative h-12 w-12 mr-3" />
-              <h1 className="relative text-[#5b5b5b] text-[1.857em]"> Defence</h1>
+              <img
+                src="https://www.rolls-royce.com/~/media/Images/R/Rolls-Royce/content-images/flexible-signposts/icons/combined-shape-new.png?h=43&iar=0&w=40"
+                className="relative h-12 w-12 mr-3"
+              />
+              <h1 className="relative text-[#5b5b5b] text-[1.857em]">
+                {" "}
+                Defence
+              </h1>
             </div>
           </div>
 
@@ -333,8 +350,14 @@ const Hero = () => {
               />
             </div>
             <div className="flex my-5 ml-5">
-              <img src="https://www.rolls-royce.com/~/media/Images/R/Rolls-Royce/content-images/flexible-signposts/icons/icon-power-new.png?h=34&iar=0&w=45" className="relative text-[#5b5b5b] h-12 w-12 mr-3" />
-              <h1 className="relative text-[#5b5b5b] text-[1.857em]"> Power Systems</h1>
+              <img
+                src="https://www.rolls-royce.com/~/media/Images/R/Rolls-Royce/content-images/flexible-signposts/icons/icon-power-new.png?h=34&iar=0&w=45"
+                className="relative text-[#5b5b5b] h-12 w-12 mr-3"
+              />
+              <h1 className="relative text-[#5b5b5b] text-[1.857em]">
+                {" "}
+                Power Systems
+              </h1>
             </div>
           </div>
 
@@ -348,7 +371,10 @@ const Hero = () => {
                 />
               </div>
               <div className="flex my-5 ml-5">
-                <img src="https://www.rolls-royce.com/~/media/Images/R/Rolls-Royce/content-images/flexible-signposts/icons/combined-shape-new.png?h=43&iar=0&w=40" className="relative text-[#5b5b5b] h-12 w-12 mr-3" />
+                <img
+                  src="https://www.rolls-royce.com/~/media/Images/R/Rolls-Royce/content-images/flexible-signposts/icons/combined-shape-new.png?h=43&iar=0&w=40"
+                  className="relative text-[#5b5b5b] h-12 w-12 mr-3"
+                />
                 <h1 className="relative text-white text-[1.857em]"> Defence</h1>
               </div>
             </div>
