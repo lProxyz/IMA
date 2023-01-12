@@ -131,7 +131,9 @@ const Header = () => {
           aria-hidden="true"
         />
         <div className="relative z-20">
-          <div className="flex max-w-7xl items-center justify-between py-3 md:py-6 px-5 md:justify-start md:space-x-10 ">
+          {/* //! Fragmento de codigo a modificar */}
+          
+          <div className="flex max-w-7xl items-center justify-between py-3 md:py-6 px-5 md:space-x-10 ">
             <div>
               <a href="#" className="flex">
                 <img
@@ -141,13 +143,14 @@ const Header = () => {
                 />
               </a>
             </div>
-            <div className="-my-2 -mr-2 md:hidden">
+            <div className="-my-2 -mr-2 lg:hidden">
               <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                 <span className="sr-only">Open menu</span>
                 <Bars3Icon className="h-6 w-6" aria-hidden="true" />
               </Popover.Button>
             </div>
-            <div className="hidden md:flex md:flex-1 md:items-center md:justify-between">
+            
+            <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-between">
               <Popover.Group as="nav" className="flex space-x-10">
                 <Popover>
                   {({ open }) => (
@@ -236,42 +239,42 @@ const Header = () => {
                     </>
                   )}
                 </Popover>
-                <a
-                  href="#"
-                  className="text-[#10069F] hover:text-[#FC4191] font-semibold text-[18px]"
-                >
-                  Products & Services
-                </a>
-                <a
-                  href="#"
-                  className="text-[#10069F] hover:text-[#FC4191] font-semibold text-[18px]"
-                >
-                  About
-                </a>
-                <a
-                  href="#"
-                  className="text-[#10069F] hover:text-[#FC4191] font-semibold text-[18px]"
-                >
-                  Investors
-                </a>
-                <a
-                  href="#"
-                  className="text-[#10069F] hover:text-[#FC4191] font-semibold text-[18px]"
-                >
-                  Sustainability
-                </a>
-                <a
-                  href="#"
-                  className="text-[#10069F] hover:text-[#FC4191] font-semibold text-[18px]"
-                >
-                  Media
-                </a>
-                <a
-                  href="#"
-                  className="text-[#10069F] hover:text-[#FC4191] font-semibold text-[18px]"
-                >
-                  Careers
-                </a>
+                  <a
+                    href="#"
+                    className="text-[#10069F] hover:text-[#FC4191] font-semibold text-[18px]"
+                  >
+                    Products & Services
+                  </a>
+                  <a
+                    href="#"
+                    className="text-[#10069F] hover:text-[#FC4191] font-semibold text-[18px]"
+                  >
+                    About
+                  </a>
+                  <a
+                    href="#"
+                    className="text-[#10069F] hover:text-[#FC4191] font-semibold text-[18px]"
+                  >
+                    Investors
+                  </a>
+                  <a
+                    href="#"
+                    className="text-[#10069F] hover:text-[#FC4191] font-semibold text-[18px]"
+                  >
+                    Sustainability
+                  </a>
+                  <a
+                    href="#"
+                    className="text-[#10069F] hover:text-[#FC4191] font-semibold text-[18px]"
+                  >
+                    Media
+                  </a>
+                  <a
+                    href="#"
+                    className="text-[#10069F] hover:text-[#FC4191] font-semibold text-[18px]"
+                  >
+                    Careers
+                  </a>
               </Popover.Group>
             </div>
           </div>
@@ -287,7 +290,7 @@ const Header = () => {
         >
           <Popover.Panel
             focus
-            className="absolute inset-x-0 top-0 z-30 origin-top-right transform p-2 transition md:hidden"
+            className="absolute inset-x-0 top-0 z-30 origin-top-right transform p-2 transition lg:hidden"
           >
             <div className="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">
               <div className="px-5 pt-5 pb-6 sm:pb-8">
@@ -318,7 +321,8 @@ const Header = () => {
                           <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md text-[#5b5b5b] sm:h-12 sm:w-12">
                             <FaAngleRight
                               className="h-6 w-6"
-                              aria-hidden="true"/>
+                              aria-hidden="true"
+                            />
                           </div>
                           <div className="ml-4 text-base font-medium text-gray-900">
                             {item.name}
