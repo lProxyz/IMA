@@ -61,25 +61,30 @@ const Carrusel = (props) => {
                 <a className="z-10">
                   {/* //! Intentando colocar el estilo del boton */}
                   <div className="hover:shadow-md duration-500 hover:shadow-black/40">
-                    <div className="h-[25rem] border border-gray-400/30">
-                      <img
-                        className=" flex h-48 object-cover w-full duration-500 hover:scale-105"
-                        src={noti.image}
-                      />
-                      <p className=" text-start p-3">{noti.name}</p>
-                      <div className="divide-y-4 divide-slate-900 w-full"></div>
-                      <div className="flex basis-1/2 justify-between mx-5 items-end">
-                        <div className="flex content-end">
-                          <p className="uppercase text-[#FA4692] font-bold text-[12px] py-3">
-                            {noti.category}
-                          </p>
+                    <div className="flex-1 justify-between h-[25rem] border border-gray-400/30">
+                        <img
+                          className=" flex h-40 sm:h-48 object-cover w-full duration-500 hover:scale-105"
+                          src={noti.image}
+                        />
+
+                      <div className="grid grid-cols-2 content-between">
+                        <div className="col-span-2">
+                          <p className="text-start p-3">{noti.name}</p>
                         </div>
 
-                        <div>
-                          <p className="uppercase text-[#CECED1] font-bold text-[12px] py-3">
-                            {noti.fecha}
-                          </p>
+                        <div className="col-span-2 flex justify-between mx-5">
+                          <div >
+                            <p className="uppercase text-[#FA4692] font-bold text-[12px] py-3">
+                              {noti.category}
+                            </p>
+                          </div>
+                          <div>
+                            <p className="uppercase text-[#CECED1] font-bold text-[12px] py-3">
+                              {noti.fecha}
+                            </p>
+                          </div>
                         </div>
+                        
                       </div>
                     </div>
                   </div>
@@ -89,8 +94,8 @@ const Carrusel = (props) => {
           ))}
         </Swiper>
       </div>
-      
-      <div className="w-full hidden md:block">
+
+      <div className="w-full hidden lg:block">
         <Swiper
           slidesPerView={4}
           spaceBetween={15}
@@ -142,7 +147,7 @@ const Carrusel = (props) => {
         </Swiper>
       </div>
 
-      <div className="w-full hidden sm:block md:hidden">
+      <div className="w-full hidden sm:block lg:hidden">
         <Swiper
           slidesPerView={2}
           spaceBetween={15}

@@ -19,6 +19,12 @@
   color: #4E5D65;
   font-size: 18px;
 }
+@layer base {
+  @import url('https://fonts.cdnfonts.com/css/ben-pioneer');
+  * {
+    font-family: 'Ben Pioneer', sans-serif;
+  }
+}
 
 @layer utilities {
   .link {
@@ -39,5 +45,18 @@
   }
   .boton:hover::before {
     @apply scale-x-100 origin-left;
-  }  
+  }
+  .avion {
+    @apply text-white h-[50px] w-[210px] hover:text-[#006DFF] flex justify-center items-center relative mt-5;
+  }
+  .avion::before {
+    @apply content-[''] absolute w-[100%] h-[100%] bg-white rounded-full top-0 left-0 scale-x-0 transition-transform ease-in-out origin-left duration-500;
+  }
+  .avion:hover::before {
+    @apply scale-x-100 origin-left;
+  }
+  .swiper-button-prev{
+    color:black;
+    background-color: black;
+  }
 }
