@@ -38,6 +38,8 @@ const noticia = [
 const Carrusel = (props) => {
   return (
     <>
+      {/* //! Carrusel en movil con 1 tarjeta*/}
+
       <div className="w-full mx-auto block sm:hidden">
         <Swiper
           slidesPerView={1}
@@ -61,77 +63,19 @@ const Carrusel = (props) => {
                 <a className="z-10">
                   {/* //! Intentando colocar el estilo del boton */}
                   <div className="hover:shadow-md duration-500 hover:shadow-black/40">
-                    <div className="flex-1 justify-between h-[25rem] border border-gray-400/30">
-                        <img
-                          className=" flex h-40 sm:h-48 object-cover w-full duration-500 hover:scale-105"
-                          src={noti.image}
-                        />
-
-                      <div className="grid grid-cols-2 content-between">
-                        <div className="col-span-2">
-                          <p className="text-start p-3">{noti.name}</p>
-                        </div>
-
-                        <div className="col-span-2 flex justify-between mx-5">
-                          <div >
-                            <p className="uppercase text-[#FA4692] font-bold text-[12px] py-3">
-                              {noti.category}
-                            </p>
-                          </div>
-                          <div>
-                            <p className="uppercase text-[#CECED1] font-bold text-[12px] py-3">
-                              {noti.fecha}
-                            </p>
-                          </div>
-                        </div>
-                        
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
-
-      <div className="w-full hidden lg:block">
-        <Swiper
-          slidesPerView={4}
-          spaceBetween={15}
-          slidesPerGroup={4}
-          loop={true}
-          loopFillGroupWithBlank={true}
-          pagination={{
-            clickable: true,
-          }}
-          navigation={true}
-          modules={[Pagination, Navigation]}
-        >
-          {noticia.map((noti) => (
-            <SwiperSlide
-              style={{ alignItems: "start", border: "5px" }}
-              className="w-full h-[26rem]"
-              key={noti.name}
-            >
-              <div className="link basis-1/4">
-                <a className="z-10">
-                  {/* //! Intentando colocar el estilo del boton */}
-                  <div className="hover:shadow-md duration-500 hover:shadow-black/40">
-                    <div className="h-[25rem] border border-gray-400/30">
+                    <div className="grid grid-cols-3 h-[25rem] border border-gray-400/30">
                       <img
-                        className=" flex h-48 object-cover w-full duration-500 hover:scale-105"
+                        className="col-span-3 flex h-48 object-cover w-full duration-500 hover:scale-105"
                         src={noti.image}
                       />
-                      <p className=" text-start p-3">{noti.name}</p>
-                      <div className="divide-y-4 divide-slate-900 w-full"></div>
-                      <div className="flex basis-1/2 justify-between mx-5 items-end">
+                      <p className="col-span-3 text-start p-3">{noti.name}</p>
+
+                      <div className="col-span-3 flex basis-1/2 justify-between mx-5 items-end">
                         <div className="flex content-end">
                           <p className="uppercase text-[#FA4692] font-bold text-[12px] py-3">
                             {noti.category}
                           </p>
                         </div>
-
                         <div>
                           <p className="uppercase text-[#CECED1] font-bold text-[12px] py-3">
                             {noti.fecha}
@@ -147,6 +91,7 @@ const Carrusel = (props) => {
         </Swiper>
       </div>
 
+      {/* //! Carrusel en Tablet con 2 tarjetas */}
       <div className="w-full hidden sm:block lg:hidden">
         <Swiper
           slidesPerView={2}
@@ -170,20 +115,19 @@ const Carrusel = (props) => {
                 <a className="z-10">
                   {/* //! Intentando colocar el estilo del boton */}
                   <div className="hover:shadow-md duration-500 hover:shadow-black/40">
-                    <div className="h-[25rem] border border-gray-400/30">
+                    <div className="grid grid-cols-3 h-[25rem] border border-gray-400/30">
                       <img
-                        className=" flex h-48 object-cover w-full duration-500 hover:scale-105"
+                        className="col-span-3 flex h-48 object-cover w-full duration-500 hover:scale-105"
                         src={noti.image}
                       />
-                      <p className=" text-start p-3">{noti.name}</p>
-                      <div className="divide-y-4 divide-slate-900 w-full"></div>
-                      <div className="flex basis-1/2 justify-between mx-5 items-end">
+                      <p className="col-span-3 text-start p-3">{noti.name}</p>
+
+                      <div className="col-span-3 flex basis-1/2 justify-between mx-5 items-end">
                         <div className="flex content-end">
                           <p className="uppercase text-[#FA4692] font-bold text-[12px] py-3">
                             {noti.category}
                           </p>
                         </div>
-
                         <div>
                           <p className="uppercase text-[#CECED1] font-bold text-[12px] py-3">
                             {noti.fecha}
@@ -191,6 +135,59 @@ const Carrusel = (props) => {
                         </div>
                       </div>
                     </div>
+                  </div>
+                </a>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+
+      {/* //! Carrusel en laptop y monitores grandes con 4 tarjetas*/}
+      <div className="w-full hidden lg:block">
+        <Swiper
+          slidesPerView={4}
+          spaceBetween={15}
+          slidesPerGroup={4}
+          loop={true}
+          loopFillGroupWithBlank={true}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[Pagination, Navigation]}
+        >
+          {noticia.map((noti) => (
+            <SwiperSlide
+              style={{ alignItems: "start", border: "5px" }}
+              className="w-full h-[30rem]"
+              key={noti.name}
+            >
+              <div className="link basis-1/4">
+                <a className="z-10">
+                  {/* //! Intentando colocar el estilo del boton */}
+                  <div className="hover:shadow-md duration-500 hover:shadow-black/40">
+                    <div className="grid grid-cols-3 h-[25rem] border border-gray-400/30">
+                      <img
+                        className="col-span-3 flex h-48 object-cover w-full duration-500 hover:scale-105"
+                        src={noti.image}
+                      />
+                      <p className="col-span-3 text-start p-3">{noti.name}</p>
+
+                      <div className="col-span-3 flex basis-1/2 justify-between mx-5 items-end">
+                        <div className="flex content-end">
+                          <p className="uppercase text-[#FA4692] font-bold text-[12px] py-3">
+                            {noti.category}
+                          </p>
+                        </div>
+                        <div>
+                          <p className="uppercase text-[#CECED1] font-bold text-[12px] py-3">
+                            {noti.fecha}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
                   </div>
                 </a>
               </div>
