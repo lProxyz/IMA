@@ -85,8 +85,9 @@ const Hero = () => {
         <div className="mx-auto my-3 lg:mt-24 ">
           <Carrusel />
         </div>
-
         {/* //! contenido de los aviones 2 columnas */}
+
+        
         <div className="grid grid-cols-2 w-full  md:pl-[39px] md:py-5 mb-4">
           {/* //! primera columna   */}
           <div className="col-span-2 sm:col-span-1 px-5 my-5 ">
@@ -140,48 +141,132 @@ const Hero = () => {
             </a>
           </div>
         </div>
-
       </div>
 
-      <div className="bg-gray-100 w-full py-20">
+      <div className="bg-gray-100 w-full py-16">
         <a
           href="#"
-          className="hover:text-[#006DFF] flex items-center justify-center text-center text-3xl md:text-[50px] text-[#1E3643]">
+          className="hover:text-[#006DFF] flex items-center justify-center text-center text-3xl md:text-[50px] text-[#1E3643]"
+        >
           Meet our experts <FaAngleRight className="mt-1 md:mt-3" />
         </a>
         <div className="mt-10 mb-12">
           <Team />
         </div>
 
-        {/* <section className="lg:relative bg-[#FA4692] w-[full] h-[529px]">
-          <div className="w-full max-w-7xl pt-[110px] pb-20 text-center lg:text-left">
-            <div className="pl-20 lg:w-1/2">
-              <h1 className="text-[40px] text-white ">
+        <div className="lg:flex">
+          <div className="w-full lg:w-2/5 px-5 sm:px-14 lg:py-28 xl:py-42 2xl:py-64 bg-[#FA4692] ">
+            <div className="py-8">
+              <h1 className="text-3xl sm:text-[40px] 2xl:text-[100px] text-white md:text-center lg:text-start">
                 <span className="xl:inline">Join our journey </span>
               </h1>
-              <p className="mx-auto mt-3 max-w-md text-lg text-white sm:text-xl md:mt-5 md:max-w-3xl pr-[190px] ">
+              <p className="sm:px-16 lg:px-0 mx-auto mt-3 tracking-wider text-md xl:text-2xl 2xl:text-4xl text-white sm:text-lg md:mt-5 md:max-w-3xl ">
                 Whether you´re starting your career, or an experienced
                 professional looking to make a difference, we offter a world of
                 possibilities to choose from
               </p>
-              <div className="boton mt-5">
-                <a
-                  href="#"
-                  className="z-10 flex w-[180px] items-center justify-center border-2 py-3 md:py-4 uppercase rounded-full text-white hover:text-[#006DFF] font-bold"
-                >
-                  Find out more <FaAngleRight className="w-5 h-5" />
-                </a>
+            </div>
+            <div className="boton 2xl:mt-24 pb-10">
+              <a
+                href="#"
+                className="z-10 flex w-[180px] items-center justify-center border-2 py-3 md:py-4 uppercase rounded-full text-white hover:text-[#006DFF] font-bold"
+              >
+                Find out more <FaAngleRight className="w-5 h-5" />
+              </a>
+            </div>
+          </div>
+          <div className="w-full   lg:w-3/5 ">
+            <img className="object-cover md:h-[300px] lg:h-full w-full object-center" alt="hero" src="https://careers.rolls-royce.com/~/media/Images/R/Rolls-Royce-Careers-V2/content-images/2-2-half-width/beyond-tomorrow.jpg?h=509&iar=0&w=702" />
+          </div>
+        </div>
+      </div>
+      <div className="bg-white mb-20">
+
+        <div className="px-8 lg:px-64">
+          <h1 className="text-[40px] text-[#1E3643] text-center my-7">Products & Services</h1>
+          <p className="text-center  pb-10 text-xl leading-[1.5em]">
+            We pionner cutting-edge technologies that deliver the cleanest, safest
+            and most competitive solutions to our planet´s vital power needs
+          </p>
+        </div>
+
+
+        <div className="mx-6 grid grid-cols-3 gap-x-6 gap-y-8">
+
+          <div className="col-span-1 relative w-full h-64 bg-black">
+            <div className="absolute mt-14">
+              <img
+                className="h-[200px] w-full object-cover object-right"
+                src="https://i.imgur.com/WgAO97Q.png"
+                alt="People working on laptops"
+              />
+            </div>
+            <div className="flex my-5 ml-5">
+              <IoAirplaneOutline className="relative text-gray-400 h-12 w-12 mr-3" />
+              <h1 className="relative text-[#5b5b5b] text-[1.857em]">
+                {" "}
+                Civil Aerospace
+              </h1>
+            </div>
+          </div>
+
+          <div className="relative w-full h-64">
+            <div className="absolute">
+              <img
+                className="h-[259px] w-full object-cover object-right"
+                src="https://images04.military.com/sites/default/files/media/equipment/military-aircraft/f-35b-lightning-ii/2014/02/f-35b-lightning-ii_010.jpg"
+                alt="Avion"
+              />
+            </div>
+            <div className="flex my-5 ml-5">
+              <img
+                src="https://www.rolls-royce.com/~/media/Images/R/Rolls-Royce/content-images/flexible-signposts/icons/combined-shape-new.png?h=43&iar=0&w=40"
+                className="relative h-12 w-12 mr-3"
+              />
+              <h1 className="relative text-[#5b5b5b] text-[1.857em]">
+                Defence
+              </h1>
+            </div>
+          </div>
+
+          <div className="relative w-full h-64 bg-white">
+            <div className="absolute">
+              <img
+                className="h-[257px] "
+                src="https://i.imgur.com/r5DaiTs.png"
+                alt="Tren"
+              />
+            </div>
+            <div className="flex my-5 ml-5">
+              <img
+                src="https://www.rolls-royce.com/~/media/Images/R/Rolls-Royce/content-images/flexible-signposts/icons/icon-power-new.png?h=34&iar=0&w=45"
+                className="relative text-[#5b5b5b] h-12 w-12 mr-3"
+              />
+              <h1 className="relative text-[#5b5b5b] text-[1.857em]">
+                Power Systems
+              </h1>
+            </div>
+          </div>
+          
+          <div className="col-span-3 flex justify-center items-center">
+            <div className="relative w-[390px] h-64">
+              <div className="absolute">
+                <img
+                  className="h-[259px] w-full object-cover object-right"
+                  src="https://images04.military.com/sites/default/files/media/equipment/military-aircraft/f-35b-lightning-ii/2014/02/f-35b-lightning-ii_010.jpg"
+                  alt="Avion"
+                />
+              </div>
+              <div className="flex my-5 ml-5">
+                <img
+                  src="https://www.rolls-royce.com/~/media/Images/R/Rolls-Royce/content-images/flexible-signposts/icons/combined-shape-new.png?h=43&iar=0&w=40"
+                  className="relative text-[#5b5b5b] h-12 w-12 mr-3"
+                />
+                <h1 className="relative text-white text-[1.857em]"> Defence</h1>
               </div>
             </div>
           </div>
-          <div className="relative h-64 sm:h-72 md:h-full lg:absolute lg:inset-y-0 lg:right-0  w-[720px]">
-            <img
-              className="absolute inset-0 h-full w-full"
-              src="https://careers.rolls-royce.com/~/media/Images/R/Rolls-Royce-Careers-V2/content-images/2-2-half-width/beyond-tomorrow.jpg?h=509&iar=0&w=702"
-              alt="Join our journey"
-            />
-          </div>
-        </section> */}
+        </div>
       </div>
     </>
   );

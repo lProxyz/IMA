@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { FaAngleRight } from "react-icons/fa";
@@ -132,16 +133,16 @@ const Header = () => {
         />
         <div className="relative z-20">
           {/* //! Fragmento de codigo a modificar */}
-          
+
           <div className="flex max-w-7xl items-center justify-between py-3 md:py-6 px-5 md:space-x-10 ">
             <div>
-              <a href="#" className="flex">
+              <Link to={'/'} className="flex">
                 <img
                   className="h-[70px] w-auto lg:h-24 lg:w-auto"
                   src="https://www.rolls-royce.com/~/media/Images/R/Rolls-Royce/logo/rebrand-svg-logo.svg?h=96&iar=0&w=59"
                   alt=""
                 />
-              </a>
+              </Link>
             </div>
             <div className="-my-2 -mr-2 lg:hidden">
               <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
@@ -149,7 +150,7 @@ const Header = () => {
                 <Bars3Icon className="h-6 w-6" aria-hidden="true" />
               </Popover.Button>
             </div>
-            
+
             <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-between">
               <Popover.Group as="nav" className="flex space-x-10">
                 <Popover>
@@ -239,42 +240,40 @@ const Header = () => {
                     </>
                   )}
                 </Popover>
-                  <a
-                    href="#"
-                    className="text-[#10069F] hover:text-[#FC4191] font-semibold text-[18px]"
-                  >
-                    Products & Services
-                  </a>
-                  <a
-                    href="#"
-                    className="text-[#10069F] hover:text-[#FC4191] font-semibold text-[18px]"
-                  >
-                    About
-                  </a>
-                  <a
-                    href="#"
-                    className="text-[#10069F] hover:text-[#FC4191] font-semibold text-[18px]"
-                  >
-                    Investors
-                  </a>
-                  <a
-                    href="#"
-                    className="text-[#10069F] hover:text-[#FC4191] font-semibold text-[18px]"
-                  >
-                    Sustainability
-                  </a>
-                  <a
-                    href="#"
-                    className="text-[#10069F] hover:text-[#FC4191] font-semibold text-[18px]"
-                  >
-                    Media
-                  </a>
-                  <a
-                    href="#"
-                    className="text-[#10069F] hover:text-[#FC4191] font-semibold text-[18px]"
-                  >
-                    Careers
-                  </a>
+                <Link rel="stylesheet" to={'/Services'} className="text-[#10069F] hover:text-[#FC4191] font-semibold text-[18px]" >
+                Products & Services 
+                </Link>
+
+                <a
+                  href="#"
+                  className="text-[#10069F] hover:text-[#FC4191] font-semibold text-[18px]"
+                >
+                  About
+                </a>
+                <a
+                  href="#"
+                  className="text-[#10069F] hover:text-[#FC4191] font-semibold text-[18px]"
+                >
+                  Investors
+                </a>
+                <a
+                  href="#"
+                  className="text-[#10069F] hover:text-[#FC4191] font-semibold text-[18px]"
+                >
+                  Sustainability
+                </a>
+                <a
+                  href="#"
+                  className="text-[#10069F] hover:text-[#FC4191] font-semibold text-[18px]"
+                >
+                  Media
+                </a>
+                <a
+                  href="#"
+                  className="text-[#10069F] hover:text-[#FC4191] font-semibold text-[18px]"
+                >
+                  Careers
+                </a>
               </Popover.Group>
             </div>
           </div>
