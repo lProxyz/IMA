@@ -39,10 +39,10 @@
   }
   /* Efecto de boton de join Our Journey en css */
   .boton {
-    @apply bg-[#FA4692] text-white hover:text-[#006DFF] flex justify-center lg:justify-start items-center relative;
+    @apply bg-[#FA4692] w-[180px] h-[58px] text-white hover:text-[#006DFF] flex justify-center lg:justify-start items-center relative;
   }
   .boton::before {
-    @apply content-[''] absolute w-[100%] h-[100%] bg-white rounded-full top-0 left-0 scale-x-0 transition-transform ease-in-out origin-right duration-500;
+    @apply content-[''] absolute w-[100%] h-[100%] bg-white rounded-full top-0 left-0 scale-x-0 transition-transform ease-in-out origin-left duration-500;
   }
   .boton:hover::before {
     @apply scale-x-100 origin-left;
