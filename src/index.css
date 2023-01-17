@@ -4,25 +4,23 @@
 
 /* Estilos para las tarjetas de los aviones */
 .card:hover * {
-  @apply
-  text-white
+  @apply text-white;
 }
 .titulo {
-  @apply
-  text-[#10069f] text-[1.6em] lg:text-[2em] leading-[1.2em] 
+  @apply text-[#10069f] text-[1.6em] lg:text-[2em] leading-[1.2em];
 }
 .subtitulo {
-  @apply
-  text-[#4e5d65] text-[1.2em] lg:text-[1.429em] leading-[1.5em]
+  @apply text-[#4e5d65] text-[1.2em] lg:text-[1.429em] leading-[1.5em];
 }
 .parrafo {
-  @apply
-  text-[#4e5d65] text-[16px] xl:text-[18px]
+  @apply text-[#4e5d65] text-[16px] xl:text-[18px];
 }
 @layer base {
-  @import url("https://fonts.cdnfonts.com/css/ben-pioneer");
+  @import url("assets/font/ProximaNova-Regular.otf");
+  @import url("assets/font/Proxima\ Nova\ Thin.otf");
+  @import url("assets/font/Proxima\ Nova\ Bold.otf");
   * {
-    font-family: "Ben Pioneer", sans-serif;
+    font-family: "ProximaNova-Regular";
   }
 }
 
@@ -55,6 +53,16 @@
     @apply content-[''] absolute w-[100%] h-[100%] bg-white rounded-full top-0 left-0 scale-x-0 transition-transform ease-in-out origin-left duration-500;
   }
   .avion:hover::before {
+    @apply scale-x-100 origin-left;
+  }
+
+  .video {
+    @apply text-white h-[50px] w-[178px] hover:text-[#006DFF] flex justify-center items-center relative mt-5;
+  }
+  .video::before {
+    @apply content-[''] absolute w-[100%] h-[100%] bg-white rounded-full top-0 left-0 scale-x-0 transition-transform ease-in-out origin-left duration-500;
+  }
+  .video:hover::before {
     @apply scale-x-100 origin-left;
   }
 }

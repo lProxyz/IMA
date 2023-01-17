@@ -36,7 +36,7 @@ const solutions = [
     name: "Products & Services",
     description: "Speak directly to your customers in a more meaningful way.",
     href: "/Services",
-    Link: '/Services',
+    Link: "/Services",
     icon: CursorArrowRaysIcon,
   },
   {
@@ -137,7 +137,7 @@ const Header = () => {
 
           <div className="flex max-w-7xl items-center justify-between py-3 md:py-6 px-5 md:space-x-10 ">
             <div>
-              <Link to={'/'} className="flex">
+              <Link to={"/"} className="flex">
                 <img
                   className="h-[70px] w-auto lg:h-24 lg:w-auto"
                   src="https://www.rolls-royce.com/~/media/Images/R/Rolls-Royce/logo/rebrand-svg-logo.svg?h=96&iar=0&w=59"
@@ -234,6 +234,7 @@ const Header = () => {
                                   </a>
                                 </div>
                               ))}
+                              callsToAction
                             </div>
                           </div>
                         </Popover.Panel>
@@ -241,16 +242,21 @@ const Header = () => {
                     </>
                   )}
                 </Popover>
-                <Link rel="stylesheet" to={'/Services'} className="text-[#10069F] hover:text-[#FC4191] font-semibold text-[18px]" >
-                Products & Services 
+                <Link
+                  rel="stylesheet"
+                  to={"/Services"}
+                  className="text-[#10069F] hover:text-[#FC4191] font-semibold text-[18px]"
+                >
+                  Products & Services
                 </Link>
 
-                <a
-                  href="#"
+                <Link
+                  rel="stylesheet"
+                  to={"/About"}
                   className="text-[#10069F] hover:text-[#FC4191] font-semibold text-[18px]"
                 >
                   About
-                </a>
+                </Link>
                 <a
                   href="#"
                   className="text-[#10069F] hover:text-[#FC4191] font-semibold text-[18px]"

@@ -7,15 +7,15 @@ import Carrusel from "../Components/Principal/Carrusel";
 const indexLayout = () => {
   return (
     <>
-      <div>
+      {/* <div>
         <Header />
-      </div>
+      </div> */}
       <div>
         <Outlet />
       </div>
-      <div>
+      {/* <div>
         <Footer />
-      </div>
+      </div> */}
     </>
   );
 };
