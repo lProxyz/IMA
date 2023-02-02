@@ -127,12 +127,12 @@ function classNames(...classes) {
 const Header = () => {
   return (
     <>
-      <Popover className="relative bg-white">
+      <Popover className="bg-white">
         <div
           className="pointer-events-none absolute inset-0 z-30 shadow"
           aria-hidden="true"
         />
-        <div className="relative z-20">
+        <div className="z-20">
           {/* //! Fragmento de codigo a modificar */}
 
           <div className="flex max-w-7xl items-center justify-between py-3 md:py-6 px-5 md:space-x-10 ">

@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Services from "./Components/Principal/Services";
 import IndexLayout from "./Layouts/indexLayout";
-import Home from "./pages/Private/Public/Principal/Home";
+import Home from "./pages/public/Principal/Home";
 import About from "./pages/About";
 
 function App() {

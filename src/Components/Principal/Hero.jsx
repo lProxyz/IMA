@@ -7,9 +7,9 @@ import { IoAirplaneOutline } from "react-icons/io5";
 const Hero = () => {
   return (
     <>
-      <div className="bg-white">
-        {/* //! Primera sección*/}{" "}
-        <div>
+      {/* <div className="bg-white"> */}
+      {/* //! Primera sección*/}{" "}
+      {/* <div>
           <div className=" flex absolute">
             <img
               className="h-full w-full object-cover"
@@ -41,17 +41,17 @@ const Hero = () => {
               </div>
             </div>
           </div>
-        </div>
-        {/* //! Imagen del avion fija (Falta hacer el efecto )*/}
-        <div className="w-full h-full sm:absolute">
+        </div> */}
+      {/* //! Imagen del avion fija (Falta hacer el efecto )*/}
+      {/* <div className="w-full h-full sm:absolute">
           <img
             className="sm:h-[500px] lg:h-[850px] w-full object-cover"
             src="https://www.rolls-royce.com/~/media/Images/R/Rolls-Royce/content-images/2019-homepage/home-module-image.jpg"
             alt="People working on laptops"
           />
-        </div>
-        {/* //! texto dentro del avion*/}
-        <div className="overflow-hidden h-full flex">
+        </div> */}
+      {/* //! texto dentro del avion*/}
+      {/* <div className="overflow-hidden h-full flex">
           <div className="relative px-3 py-12 sm:ml-[75px] sm:px-12 sm:mt-24 sm:basis-3/5 xl:basis-1/2 lg:ml-[90px]  bg-[#1E3643E6] bg-opacity-10 lg:px-[40px] lg:py-[110px] lg:my-[200px]">
             <span className="text-2xl font-semibold md:text-4xl xl:text-5xl text-white">
               Pioneers of Power
@@ -74,20 +74,20 @@ const Hero = () => {
               </button>
             </div>
           </div>
-        </div>
-        {/* //! Seccion de noticias (carrusel) */}
-        <h1 className="mt-12 text-center text-2xl lg:text-[50px] text-[#1E3643]">
+        </div> */}
+      {/* //! Seccion de noticias (carrusel) */}
+      {/* <h1 className="mt-12 text-center text-2xl lg:text-[50px] text-[#1E3643]">
           Latest Updates
-        </h1>
-        {/* More main page content here... */}
-        {/* //! implementacion del componente del carrusel   */}
-        <div className="mx-auto my-3 lg:mt-24 ">
+        </h1> */}
+      {/* More main page content here... */}
+      {/* //! implementacion del componente del carrusel   */}
+      {/* <div className="mx-auto my-3 lg:mt-24 ">
           <Carrusel />
-        </div>
-        {/* //! contenido de los aviones 2 columnas */}
-        <div className="grid grid-cols-2 w-full  md:pl-[39px] md:py-5 mb-4">
-          {/* //! primera columna   */}
-          <div className="col-span-2 sm:col-span-1 px-5 my-5 ">
+        </div> */}
+      {/* //! contenido de los aviones 2 columnas */}
+      {/* <div className="grid grid-cols-2 w-full  md:pl-[39px] md:py-5 mb-4"> */}
+      {/* //! primera columna   */}
+      {/* <div className="col-span-2 sm:col-span-1 px-5 my-5 ">
             <a href="#">
               <div className=" card hover:shadow-2xl hover:bg-[#006DFF] border border-gray-200 md:h-[768px] lg:h-[636px]  xl:h-[750px]">
                 <img
@@ -136,11 +136,10 @@ const Hero = () => {
                 </p>
               </div>
             </a>
-          </div>
-        </div>
-      </div>
-
-      <div className="bg-gray-100 w-full py-16">
+          </div> */}
+      {/* </div> */}
+      {/* </div> */}
+      {/* <div className="bg-gray-100 w-full py-16">
         <a
           href="#"
           className="hover:text-[#006DFF] flex items-center justify-center text-center text-3xl md:text-[50px] text-[#1E3643]"
@@ -180,11 +179,10 @@ const Hero = () => {
             />
           </div>
         </div>
-      </div>
-
-      <div className="w-full bg-white mb-20">
-        {/* //!Seccion de productos y services */}
-        <div className="px-8 ">
+      </div> */}
+      {/* <div className="w-full bg-white mb-20"> */}
+      {/* //!Seccion de productos y services */}
+      {/* <div className="px-8 ">
           <h1 className="text-[40px] text-[#1E3643] text-center my-7">
             Products & Services
           </h1>
@@ -193,11 +191,10 @@ const Hero = () => {
             safest and most competitive solutions to our planet´s vital power
             needs
           </p>
-        </div>
-
-        <div className=" mx-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-8">
-          {/* //!Primera columna del grid*/}
-          <div className="col-span-1 relative w-full h-64 bg-black">
+        </div> */}
+      {/* <div className=" mx-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-8"> */}
+      {/* //!Primera columna del grid*/}
+      {/* <div className="col-span-1 relative w-full h-64 bg-black">
             <div className="absolute mt-14">
               <img
                 className="h-[200px] w-full object-cover object-right"
@@ -211,10 +208,9 @@ const Hero = () => {
                 Civil Aerospace
               </h1>
             </div>
-          </div>
-
-          {/* //! Segunda columna del grid*/}
-          <div className="col-span-1 relative w-full h-64">
+          </div> */}
+      {/* //! Segunda columna del grid*/}
+      {/* <div className="col-span-1 relative w-full h-64">
             <div className="absolute">
               <img
                 className="h-[259px] w-full object-cover object-right"
@@ -231,10 +227,9 @@ const Hero = () => {
                 Defence
               </h1>
             </div>
-          </div>
-
-          {/* //!Tercera columna del grid*/}
-          <div className="relative w-full h-64 bg-white">
+          </div> */}
+      {/* //!Tercera columna del grid*/}
+      {/* <div className="relative w-full h-64 bg-white">
             <div className="absolute">
               <img
                 className="h-[257px] "
@@ -251,10 +246,9 @@ const Hero = () => {
                 Power Systems
               </h1>
             </div>
-          </div>
-
-          {/* //!Columna sola*/}
-          <div className="col-span-1"></div>
+          </div> */}
+      {/* //!Columna sola*/}
+      {/* <div className="col-span-1"></div>
           <div className="col-span-1 lg:col-span-1 flex justify-center items-center">
             <div className="relative w-full h-64 bg-white">
               <div className="absolute">
@@ -275,9 +269,9 @@ const Hero = () => {
                 </h1>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
+          </div> */}
+      {/* </div> */}
+      {/* </div> */}
     </>
   );
 };
