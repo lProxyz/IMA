@@ -7,30 +7,27 @@ import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
 
 const noticia = [
   {
-    name: "Rolls Royce UltraFan technology demonstrator build complete and getting ready to test",
-    image:
-      "https://www.rolls-royce.com/~/media/Images/R/Rolls-Royce/Stories/2022/rr-ultrafan-content-image.jpg?h=300&iar=0&w=480",
+    name: "Proyectos de cogeneración a base de motor de combustión interna, turbinas de gas y vapor.",
+    image: "src/assets/img/usar5.jpg",
     category: "Press Releases",
     fecha: "19-12-2022",
   },
   {
-    name: "Rolls-Royce and Gulfstream give wings to sustainable business aviation",
-    image:
-      "https://www.rolls-royce.com/~/media/Images/R/Rolls-Royce/Stories/2022/rr-gulfstream-content-image.jpg?h=300&iar=0&w=480",
+    name: "Modernización de instalaciones e incremento de capacidad productiva.",
+    image: "src/assets/img/usar2.jpg",
     category: "Press Releases",
     fecha: "16-12-2022",
   },
   {
-    name: "A 5-minute chat with Marcin Dutka",
-    image:
-      "https://www.rolls-royce.com/~/media/Images/R/Rolls-Royce/Stories/2022/story-a-5-minute-chat-with-marcin-dutka-01.jpg?h=200&iar=0&w=200",
+    name: "Brindamos mantenimiento a motores de gas natural o Diésel.",
+    image: "src/assets/img/usar8.jpg",
     category: "News & Insights",
     fecha: "13-12-2022",
   },
   {
-    name: "Rolls-Royce, Pratt & Whitney, Virginia Tech announce new research partnership",
+    name: "Ofrecemos Tratamiento Químico del Agua de Alimentación o Caldera.",
     image:
-      "https://www.rolls-royce.com/~/media/Images/R/Rolls-Royce/content-images/marine/discover/landing-images/pr-default-landing-image-v3.jpg?h=470&iar=0&w=500",
+      "https://imapowerplants.com/wp-content/uploads/2021/09/IMA_tratamiento_calderas-1-300x122.jpg",
     category: "Press Releases",
     fecha: "09-12-2022",
   },
@@ -187,7 +184,6 @@ const Carrusel = (props) => {
                         </div>
                       </div>
                     </div>
-
                   </div>
                 </a>
               </div>

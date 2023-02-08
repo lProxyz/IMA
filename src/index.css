@@ -36,7 +36,7 @@
     @apply scale-y-100 origin-bottom;
   }
   /* Efecto de boton de join Our Journey en css */
-  .boton {
+  /* .boton {
     @apply bg-[#FA4692] w-[180px] h-[58px] text-white hover:text-[#006DFF] flex justify-center lg:justify-start items-center relative;
   }
   .boton::before {
@@ -44,9 +44,9 @@
   }
   .boton:hover::before {
     @apply scale-x-100 origin-left;
-  }
+  } */
   /* Efecto de boton del avion en css */
-  .avion {
+  /* .avion {
     @apply text-white h-[50px] w-[210px] hover:text-[#006DFF] flex justify-center items-center relative mt-5;
   }
   .avion::before {
@@ -54,7 +54,7 @@
   }
   .avion:hover::before {
     @apply scale-x-100 origin-left;
-  }
+  } */
 
   .video {
     @apply text-white h-[50px] w-[178px] hover:text-[#006DFF] flex justify-center items-center relative mt-5;
